@@ -1,0 +1,51 @@
+a {
+    font-size:14px;
+    font-weight:700
+  }
+  .superNav {
+    font-size:13px;
+  }
+  .form-control {
+    outline:none !important;
+    box-shadow: none !important;
+  }
+  .card:hover {
+    transform: scale(1.05); /* Scale the card by 5% when hovered */
+  }
+  @media screen and (max-width:540px){
+    .centerOnMobile {
+      text-align:center
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Style for the image on the left */
+.image-container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Style for the description on the right */
+.description-container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container, .description-container {
+        flex: none;
+    }
+}
